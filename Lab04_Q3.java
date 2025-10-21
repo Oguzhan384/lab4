@@ -86,7 +86,7 @@ public class Lab04_Q3 {
                     }
                     turn = 2; 
                 }
-                else if (playerGrid.charAt(selectedPosition) == "O".charAt(0)){
+                else if (playerGrid.charAt(selectedPosition) == "X".charAt(0)){
                     System.out.println("Already hit this ship!");
                 }
                 else{
@@ -126,7 +126,7 @@ public class Lab04_Q3 {
                     if (actualGrid.charAt(selectedPosition) == "1".charAt(0)){
                         System.out.println("Hit!");
                         playerGrid = playerGrid.substring(0,selectedPosition) + "X" + playerGrid.substring(selectedPosition+1);
-                        player1++;
+                        player2++;
                         shipFound++;
                         totalGuess++;
                     }
@@ -137,7 +137,7 @@ public class Lab04_Q3 {
                     }
                     turn = 3;
                 }
-                else if (playerGrid.charAt(selectedPosition) == "O".charAt(0)){
+                else if (playerGrid.charAt(selectedPosition) == "X".charAt(0)){
                     System.out.println("Already hit this ship!");
                 }
                 else{
@@ -177,7 +177,7 @@ public class Lab04_Q3 {
                     if (actualGrid.charAt(selectedPosition) == "1".charAt(0)){
                         System.out.println("Hit!");
                         playerGrid = playerGrid.substring(0,selectedPosition) + "X" + playerGrid.substring(selectedPosition+1);
-                        player1++;
+                        player3++;
                         shipFound++;
                         totalGuess++;
                     }
@@ -189,7 +189,7 @@ public class Lab04_Q3 {
                     totalRound++;
                     turn = 1;
                 }
-                else if (playerGrid.charAt(selectedPosition) == "O".charAt(0)){
+                else if (playerGrid.charAt(selectedPosition) == "X".charAt(0)){
                     System.out.println("Already hit this ship!");
                 }
                 else{
@@ -206,9 +206,9 @@ public class Lab04_Q3 {
                                 "Game finished!\n" + 
                                 "Total rounds played: " + totalRound + "\n" + 
                                 "Total guesses: " + totalGuess + "\n" + 
-                                "Player1 score: " + player1 + "ships found\n" + 
-                                "Player2 score: " + player2 + "ships found\n" + 
-                                "Player3 score: " + player3 + "ships found\n" +
+                                "Player1 score: " + player1 + " ships found\n" + 
+                                "Player2 score: " + player2 + " ships found\n" + 
+                                "Player3 score: " + player3 + " ships found\n" +
                                 "Winner: Player1");
         }
         //winner player 2
@@ -217,9 +217,9 @@ public class Lab04_Q3 {
                                 "Game finished!\n" + 
                                 "Total rounds played: " + totalRound + "\n" + 
                                 "Total guesses: " + totalGuess + "\n" + 
-                                "Player1 score: " + player1 + "ships found\n" + 
-                                "Player2 score: " + player2 + "ships found\n" + 
-                                "Player3 score: " + player3 + "ships found\n" +
+                                "Player1 score: " + player1 + " ships found\n" + 
+                                "Player2 score: " + player2 + " ships found\n" + 
+                                "Player3 score: " + player3 + " ships found\n" +
                                 "Winner: Player2");
         }
         //winner player 3
@@ -228,13 +228,21 @@ public class Lab04_Q3 {
                                 "Game finished!\n" + 
                                 "Total rounds played: " + totalRound + "\n" + 
                                 "Total guesses: " + totalGuess + "\n" + 
-                                "Player1 score: " + player1 + "ships found\n" + 
-                                "Player2 score: " + player2 + "ships found\n" + 
-                                "Player3 score: " + player3 + "ships found\n" +
+                                "Player1 score: " + player1 + " ships found\n" + 
+                                "Player2 score: " + player2 + " ships found\n" + 
+                                "Player3 score: " + player3 + " ships found\n" +
                                 "Winner: Player3");
         }
         //tie
         else{
+            System.out.println("*********************\n" + 
+                                "Game finished!\n" + 
+                                "Total rounds played: " + totalRound + "\n" + 
+                                "Total guesses: " + totalGuess + "\n" + 
+                                "Player1 score: " + player1 + " ships found\n" + 
+                                "Player2 score: " + player2 + " ships found\n" + 
+                                "Player3 score: " + player3 + " ships found\n" +
+                                "It's a tie!");
             
         }
     }
