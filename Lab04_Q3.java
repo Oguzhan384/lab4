@@ -62,7 +62,7 @@ public class Lab04_Q3 {
                 while (legitInput == false){
                     System.out.print("Guess column: ");
                     column = scanner.nextInt();
-                    if (column < 0 && column > 4){
+                    if (column < 0 || column > 4){
                         System.out.println("Invalid guess. Try again.");
                     }
                     else{
@@ -113,7 +113,7 @@ public class Lab04_Q3 {
                 while (legitInput == false){
                     System.out.print("Guess column: ");
                     column = scanner.nextInt();
-                    if (column < 0 && column > 4){
+                    if (column < 0 || column > 4){
                         System.out.println("Invalid guess. Try again.");
                     }
                     else{
@@ -164,7 +164,7 @@ public class Lab04_Q3 {
                 while (legitInput == false){
                     System.out.print("Guess column: ");
                     column = scanner.nextInt();
-                    if (column < 0 && column > 4){
+                    if (column < 0 || column > 4){
                         System.out.println("Invalid guess. Try again.");
                     }
                     else{
